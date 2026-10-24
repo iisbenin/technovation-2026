@@ -1,0 +1,10 @@
+{
+  "name": "technovation-2026",
+  "version": "1.0.0",
+  "description": "TECHNOVATION 2026 Event Page — Department of Computer Science, Hill City University",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  }
+}

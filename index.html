@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>TECHNOVATION '26 | Oct 29 • Cotonou</title>
+  <meta name="description" content="Beyond the Classroom: Building Skills, Careers & Innovations. Oct 29, 2026 • 10:00 AM Prompt • Ciné-Concorde, Cotonou." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Syne:wght@700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Ambient Aurora Backdrop -->
+  <div class="aurora-stage" aria-hidden="true">
+    <div class="aurora-orb orb-volt"></div>
+    <div class="aurora-orb orb-ember"></div>
+    <div class="aurora-orb orb-violet"></div>
+    <div class="grid-mesh"></div>
+  </div>
+
+  <!-- Sticky Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="shell header-bar">
+      <a href="#top" class="brand-mark">
+        <span class="brand-badge">CS</span>
+        <div class="brand-copy">
+          <span class="brand-name">TECHNOVATION<sup class="volt-sup">'26</sup></span>
+          <span class="brand-sub">HILL CITY UNIVERSITY</span>
+        </div>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="#highlights">Highlights</a>
+        <a href="#speakers">Speakers <span class="nav-pill">7</span></a>
+        <a href="#tracks">Tracks</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#venue">Venue</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="icon-btn" id="viewPosterBtn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+          <span>Flyer</span>
+        </button>
+        <a href="#pass" class="btn-volt btn-sm hide-xs">Get Ticket</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="shell hero-grid">
+        <div class="hero-copy reveal-up">
+          <div class="live-tag">
+            <span class="pulse-dot"></span>
+            <span>DEPT. OF COMPUTER SCIENCE • HCU</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="ht-top">TECH</span>
+            <span class="ht-bottom">NOVATION <em class="serif-em">'26</em></span>
+          </h1>
+
+          <p class="hero-tagline">
+            Beyond the Classroom: Building Skills, Careers &amp; Innovations for the Future of Technology.
+          </p>
+
+          <!-- Event Quick Pills -->
+          <div class="quick-pills">
+            <div class="q-pill">
+              <span class="q-icon">📅</span>
+              <div>
+                <small>DATE</small>
+                <strong>29 Oct 2026</strong>
+              </div>
+            </div>
+            <div class="q-pill">
+              <span class="q-icon">⏰</span>
+              <div>
+                <small>TIME</small>
+                <strong>10:00 AM Prompt</strong>
+              </div>
+            </div>
+            <div class="q-pill">
+              <span class="q-icon">📍</span>
+              <div>
+                <small>VENUE</small>
+                <strong>Ciné-Concorde, Cotonou</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Countdown -->
+          <div class="countdown-strip" aria-label="Event Countdown">
+            <div class="cd-box">
+              <span class="cd-val" id="cdDays">05</span>
+              <span class="cd-lbl">DAYS</span>
+            </div>
+            <span class="cd-colon">:</span>
+            <div class="cd-box">
+              <span class="cd-val" id="cdHours">00</span>
+              <span class="cd-lbl">HRS</span>
+            </div>
+            <span class="cd-colon">:</span>
+            <div class="cd-box">
+              <span class="cd-val" id="cdMinutes">00</span>
+              <span class="cd-lbl">MIN</span>
+            </div>
+            <span class="cd-colon">:</span>
+            <div class="cd-box cd-box-volt">
+              <span class="cd-val" id="cdSeconds">00</span>
+              <span class="cd-lbl">SEC</span>
+            </div>
+          </div>
+
+          <div class="hero-ctas">
+            <a href="#pass" class="btn-volt btn-lg">
+              <span>Get Free Ticket</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+            <button type="button" class="btn-glass btn-lg" id="icsDownloadBtn">
+              <span>+ Calendar</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Hero Interactive 3D Flyer Card -->
+        <div class="hero-visual reveal-scale">
+          <div class="holo-pass-wrap" id="heroTiltCard">
+            <div class="holo-pass">
+              <div class="holo-sheen" aria-hidden="true"></div>
+              <div class="hp-top">
+                <span class="hp-badge">OFFICIAL FLYER</span>
+                <span class="mono-sm">29.10.26 • COTONOU</span>
+              </div>
+              <div class="hp-img-box" id="openPosterFromHero">
+                <img src="assets/flyer.jpg" alt="Technovation 2026 Flyer" />
+                <span class="tap-zoom">Tap to Expand ↗</span>
+              </div>
+              <div class="hp-bottom">
+                <div class="avatar-row">
+                  <img src="assets/speaker-kasumu.jpg" alt="Dr. Kasumu" />
+                  <img src="assets/speaker-joel.jpg" alt="Joel" />
+                  <img src="assets/speaker-stephen.jpg" alt="Stephen" />
+                  <img src="assets/speaker-omena.jpg" alt="Omena" />
+                  <img src="assets/speaker-odeh.jpg" alt="Odeh" />
+                  <img src="assets/speaker-solomon.jpg" alt="Solomon" />
+                  <img src="assets/speaker-alex.jpg" alt="Alex" />
+                </div>
+                <div class="hp-meta">
+                  <strong>7 Industry Mentors</strong>
+                  <span>IT • Code • Design • Growth</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KINETIC TICKER -->
+    <div class="marquee-bar" aria-hidden="true">
+      <div class="marquee-track">
+        <span>LEARN</span><span>✦</span>
+        <span>CONNECT</span><span>✦</span>
+        <span>INNOVATE</span><span>✦</span>
+        <span>BUILD THE FUTURE</span><span>✦</span>
+        <span>29 OCT 2026 • 10:00 AM PROMPT</span><span>✦</span>
+        <span>CINÉ-CONCORDE, COTONOU</span><span>✦</span>
+        <span>LEARN</span><span>✦</span>
+        <span>CONNECT</span><span>✦</span>
+        <span>INNOVATE</span><span>✦</span>
+        <span>BUILD THE FUTURE</span><span>✦</span>
+        <span>29 OCT 2026 • 10:00 AM PROMPT</span><span>✦</span>
+        <span>CINÉ-CONCORDE, COTONOU</span><span>✦</span>
+      </div>
+    </div>
+
+    <!-- 01. KEY HIGHLIGHTS (Zero Overlap Header Layout) -->
+    <section class="section" id="highlights">
+      <div class="shell">
+        <div class="sec-head reveal-up">
+          <div>
+            <span class="eyebrow">01 // KEY HIGHLIGHTS</span>
+            <h2 class="sec-title">5 Reasons to <span class="serif-em">Attend.</span></h2>
+          </div>
+          <span class="swipe-hint">Swipe →</span>
+        </div>
+
+        <div class="highlights-rail">
+          <article class="hl-card spotlight-card reveal-up" style="--delay: 0ms">
+            <div class="hl-card-head">
+              <span class="pill pill-volt">CAREERS</span>
+              <span class="hl-num">01</span>
+            </div>
+            <h3>Explore Career Opportunities</h3>
+            <p>Discover high-growth roles across software, IT consulting, design &amp; digital media.</p>
+          </article>
+
+          <article class="hl-card spotlight-card reveal-up" style="--delay: 60ms">
+            <div class="hl-card-head">
+              <span class="pill pill-ember">SKILLS</span>
+              <span class="hl-num">02</span>
+            </div>
+            <h3>Learn Practical Digital Skills</h3>
+            <p>Master the real tools and workflows companies and clients actually pay for.</p>
+          </article>
+
+          <article class="hl-card spotlight-card reveal-up" style="--delay: 120ms">
+            <div class="hl-card-head">
+              <span class="pill pill-violet">MENTORSHIP</span>
+              <span class="hl-num">03</span>
+            </div>
+            <h3>Get Industry Insights</h3>
+            <p>Direct, unfiltered lessons from 7 active tech practitioners and leaders.</p>
+          </article>
+
+          <article class="hl-card spotlight-card reveal-up" style="--delay: 180ms">
+            <div class="hl-card-head">
+              <span class="pill pill-mint">CLARITY</span>
+              <span class="hl-num">04</span>
+            </div>
+            <h3>Discover Your Tech Path</h3>
+            <p>Match your strengths to the right specialization—code, design, IT, or growth.</p>
+          </article>
+
+          <article class="hl-card spotlight-card reveal-up" style="--delay: 240ms">
+            <div class="hl-card-head">
+              <span class="pill pill-volt">COMMUNITY</span>
+              <span class="hl-num">05</span>
+            </div>
+            <h3>Network, Innovate &amp; Build</h3>
+            <p>Connect with student builders, mentors &amp; future co-founders in Cotonou.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02. SPEAKERS LINEUP (Clean Centered Portrait Medallions — Zero Face Cropping or Overlap) -->
+    <section class="section sec-dark" id="speakers">
+      <div class="shell">
+        <div class="sec-head reveal-up">
+          <div>
+            <span class="eyebrow">02 // THE LINEUP</span>
+            <h2 class="sec-title">Meet the <span class="serif-em">7 Speakers.</span></h2>
+          </div>
+
+          <div class="filter-pills" role="tablist">
+            <button type="button" class="f-pill active" data-filter="all">All (7)</button>
+            <button type="button" class="f-pill" data-filter="it">IT Consulting</button>
+            <button type="button" class="f-pill" data-filter="code">Code &amp; Web</button>
+            <button type="button" class="f-pill" data-filter="design">Design</button>
+            <button type="button" class="f-pill" data-filter="growth">Marketing &amp; Media</button>
+          </div>
+        </div>
+
+        <!-- Lead Keynote Card: DR. Kasumu Olushola -->
+        <article class="keynote-card spotlight-card reveal-up" data-track="it">
+          <div class="kc-avatar-wrap">
+            <div class="kc-avatar-ring">
+              <img src="assets/speaker-kasumu.jpg" alt="DR. Kasumu Olushola — I.T Consultant/Expert" />
+            </div>
+            <span class="kc-lead-tag">★ LEAD SPEAKER</span>
+          </div>
+          <div class="kc-body">
+            <div class="kc-top-tags">
+              <span class="pill pill-volt">I.T CONSULTANT / EXPERT</span>
+              <span class="pill pill-outline">KEYNOTE</span>
+            </div>
+            <h3>DR. Kasumu Olushola</h3>
+            <p>Flagship keynote on bridging university Computer Science with enterprise IT consulting, strategy &amp; global tech leadership.</p>
+            <button type="button" class="ask-chip ask-btn" data-speaker="DR. Kasumu Olushola">
+              <span>Ask Dr. Kasumu a Question</span>
+              <span>↗</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- 6 Panelists Clean Portrait Grid / Mobile Swipe Rail -->
+        <div class="speakers-rail" id="speakersRail">
+          <!-- Joel -->
+          <article class="sp-card spotlight-card reveal-up" data-track="code growth">
+            <div class="sp-card-top">
+              <span class="sp-num">02</span>
+              <span class="pill pill-volt">CODE + GROWTH</span>
+            </div>
+            <div class="sp-portrait-frame ring-volt">
+              <img src="assets/speaker-joel.jpg" alt="Joel — Digital Marketer & Programmer" />
+            </div>
+            <div class="sp-info">
+              <h3>Joel</h3>
+              <p class="sp-role">Digital Marketer &amp; Programmer</p>
+              <button type="button" class="sp-ask ask-btn" data-speaker="Joel">Ask a Question →</button>
+            </div>
+          </article>
+
+          <!-- Stephen Pascal -->
+          <article class="sp-card spotlight-card reveal-up" data-track="growth">
+            <div class="sp-card-top">
+              <span class="sp-num">03</span>
+              <span class="pill pill-ember">TECH MEDIA</span>
+            </div>
+            <div class="sp-portrait-frame ring-ember">
+              <img src="assets/speaker-stephen.jpg" alt="Stephen Pascal — Content Creator" />
+            </div>
+            <div class="sp-info">
+              <h3>Stephen Pascal</h3>
+              <p class="sp-role">Content Creator</p>
+              <button type="button" class="sp-ask ask-btn" data-speaker="Stephen Pascal">Ask a Question →</button>
+            </div>
+          </article>
+
+          <!-- Omena John -->
+          <article class="sp-card spotlight-card reveal-up" data-track="design">
+            <div class="sp-card-top">
+              <span class="sp-num">04</span>
+              <span class="pill pill-violet">CREATIVE</span>
+            </div>
+            <div class="sp-portrait-frame ring-violet">
+              <img src="assets/speaker-omena.jpg" alt="Omena John — Creative Designer" />
+            </div>
+            <div class="sp-info">
+              <h3>Omena John</h3>
+              <p class="sp-role">Creative Designer</p>
+              <button type="button" class="sp-ask ask-btn" data-speaker="Omena John">Ask a Question →</button>
+            </div>
+          </article>
+
+          <!-- Odeh Anthony -->
+          <article class="sp-card spotlight-card reveal-up" data-track="growth">
+            <div class="sp-card-top">
+              <span class="sp-num">05</span>
+              <span class="pill pill-ember">ADTECH &amp; ADS</span>
+            </div>
+            <div class="sp-portrait-frame ring-ember">
+              <img src="assets/speaker-odeh.jpg" alt="Odeh Anthony — Digital Marketing & Advertising Expert" />
+            </div>
+            <div class="sp-info">
+              <h3>Odeh Anthony</h3>
+              <p class="sp-role">Digital Marketing &amp; Advertising Expert</p>
+              <button type="button" class="sp-ask ask-btn" data-speaker="Odeh Anthony">Ask a Question →</button>
+            </div>
+          </article>
+
+          <!-- Solomon Sunday -->
+          <article class="sp-card spotlight-card reveal-up" data-track="design">
+            <div class="sp-card-top">
+              <span class="sp-num">06</span>
+              <span class="pill pill-violet">VISUAL DESIGN</span>
+            </div>
+            <div class="sp-portrait-frame ring-violet">
+              <img src="assets/speaker-solomon.jpg" alt="Solomon Sunday — Graphic Designer" />
+            </div>
+            <div class="sp-info">
+              <h3>Solomon Sunday</h3>
+              <p class="sp-role">Graphic Designer</p>
+              <button type="button" class="sp-ask ask-btn" data-speaker="Solomon Sunday">Ask a Question →</button>
+            </div>
+          </article>
+
+          <!-- Alex -->
+          <article class="sp-card spotlight-card reveal-up" data-track="code design">
+            <div class="sp-card-top">
+              <span class="sp-num">07</span>
+              <span class="pill pill-mint">WEB DEV</span>
+            </div>
+            <div class="sp-portrait-frame ring-mint">
+              <img src="assets/speaker-alex.jpg" alt="Alex — Website Designer & Developer" />
+            </div>
+            <div class="sp-info">
+              <h3>Alex</h3>
+              <p class="sp-role">Website Designer &amp; Developer</p>
+              <button type="button" class="sp-ask ask-btn" data-speaker="Alex">Ask a Question →</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03. INTERACTIVE CAREER MATCHER -->
+    <section class="section sec-light" id="tracks">
+      <div class="shell">
+        <div class="sec-head reveal-up">
+          <div>
+            <span class="eyebrow eyebrow-dark">03 // CAREER COMPASS</span>
+            <h2 class="sec-title title-dark">Pick Your <span class="serif-em-dark">Tech Track.</span></h2>
+          </div>
+        </div>
+
+        <div class="track-picker reveal-up">
+          <div class="tp-buttons" role="tablist">
+            <button type="button" class="tp-btn active" data-track="web">💻 Web &amp; Code</button>
+            <button type="button" class="tp-btn" data-track="it">🛡 IT Consulting</button>
+            <button type="button" class="tp-btn" data-track="design">🎨 Creative Design</button>
+            <button type="button" class="tp-btn" data-track="marketing">📈 Digital Marketing</button>
+            <button type="button" class="tp-btn" data-track="media">🎬 Content Creation</button>
+          </div>
+
+          <div class="tp-panel" id="trackPanel"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04. COMPACT AGENDA -->
+    <section class="section" id="agenda">
+      <div class="shell">
+        <div class="sec-head reveal-up">
+          <div>
+            <span class="eyebrow">04 // SCHEDULE</span>
+            <h2 class="sec-title">Oct 29 <span class="serif-em">Run of Show.</span></h2>
+          </div>
+          <span class="pill pill-volt">STARTS 10:00 AM PROMPT</span>
+        </div>
+
+        <div class="agenda-list">
+          <div class="ag-item reveal-up">
+            <span class="ag-time">10:00 AM</span>
+            <div class="ag-info">
+              <strong>Arrival, Check-In &amp; Red Carpet</strong>
+              <span>Ciné-Concorde • Dept. of Computer Science Welcome</span>
+            </div>
+            <span class="pill pill-outline">CHECK-IN</span>
+          </div>
+
+          <div class="ag-item ag-highlight reveal-up">
+            <span class="ag-time">10:30 AM</span>
+            <div class="ag-info">
+              <strong>Keynote: Beyond the Classroom</strong>
+              <span>DR. Kasumu Olushola (I.T Consultant / Expert)</span>
+            </div>
+            <span class="pill pill-volt">KEYNOTE</span>
+          </div>
+
+          <div class="ag-item reveal-up">
+            <span class="ag-time">11:15 AM</span>
+            <div class="ag-info">
+              <strong>Code, Web &amp; Visual Design Sessions</strong>
+              <span>Alex • Joel • Omena John • Solomon Sunday</span>
+            </div>
+            <span class="pill pill-mint">BUILD &amp; DESIGN</span>
+          </div>
+
+          <div class="ag-item reveal-up">
+            <span class="ag-time">12:15 PM</span>
+            <div class="ag-info">
+              <strong>Digital Growth, Ads &amp; Tech Media</strong>
+              <span>Odeh Anthony • Stephen Pascal</span>
+            </div>
+            <span class="pill pill-ember">GROWTH</span>
+          </div>
+
+          <div class="ag-item reveal-up">
+            <span class="ag-time">01:00 PM</span>
+            <div class="ag-info">
+              <strong>Live Panel Q&amp;A + Networking Mixer</strong>
+              <span>All 7 Speakers • Career Clinic &amp; Photos</span>
+            </div>
+            <span class="pill pill-violet">Q&amp;A + CONNECT</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05. VENUE & CONTACT -->
+    <section class="section sec-dark" id="venue">
+      <div class="shell venue-split">
+        <div class="venue-box spotlight-card reveal-up">
+          <span class="eyebrow">05 // VENUE &amp; CONTACT</span>
+          <h3>Ciné-Concorde</h3>
+          <p class="venue-loc">Von Sokodo, Akpakpa, Cotonou, Benin Republic</p>
+
+          <div class="contact-chips">
+            <a href="tel:+22962207226" class="c-chip">📞 +229 62 20 72 26</a>
+            <a href="mailto:computerscience@hillcityuniversity.org" class="c-chip">✉️ computerscience@hillcityuniversity.org</a>
+            <a href="https://www.hillcityuniversity.org" target="_blank" rel="noopener noreferrer" class="c-chip">🌐 www.hillcityuniversity.org ↗</a>
+          </div>
+
+          <a href="https://www.google.com/maps/search/?api=1&query=Cin%C3%A9-Concorde+Akpakpa+Cotonou+Benin" target="_blank" rel="noopener noreferrer" class="btn-volt btn-sm">
+            <span>Open Directions in Google Maps ↗</span>
+          </a>
+        </div>
+
+        <div class="map-box reveal-up">
+          <iframe
+            title="Ciné-Concorde, Cotonou"
+            src="https://www.google.com/maps?q=Cine+Concorde+Akpakpa+Cotonou+Benin&output=embed"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06. REALISTIC EVENT TICKET STUDIO WITH CHECK-IN QR + BARCODE & PNG DOWNLOAD -->
+    <section class="section" id="pass">
+      <div class="shell">
+        <div class="sec-head reveal-up">
+          <div>
+            <span class="eyebrow">06 // FREE REGISTRATION &amp; CHECK-IN PASS</span>
+            <h2 class="sec-title">Mint &amp; Download Your <span class="serif-em">Event Ticket.</span></h2>
+          </div>
+          <span class="pill pill-volt">INSTANT QR + BARCODE CHECK-IN</span>
+        </div>
+
+        <div class="pass-grid">
+          <!-- Registration Form -->
+          <form class="pass-form spotlight-card reveal-up" id="passForm">
+            <div class="form-row-2">
+              <div class="inp-group">
+                <label for="attName">Full Name *</label>
+                <input type="text" id="attName" required placeholder="e.g. Samuel Mensah" autocomplete="name" />
+              </div>
+              <div class="inp-group">
+                <label for="attPhone">Phone / WhatsApp *</label>
+                <input type="tel" id="attPhone" required placeholder="+229 ..." autocomplete="tel" />
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="inp-group">
+                <label for="attEmail">Email Address *</label>
+                <input type="email" id="attEmail" required placeholder="you@example.com" autocomplete="email" />
+              </div>
+              <div class="inp-group">
+                <label for="attRole">Attendee Category *</label>
+                <select id="attRole">
+                  <option value="CS STUDENT // HCU">CS Student (HCU)</option>
+                  <option value="UNIVERSITY STUDENT">University Student</option>
+                  <option value="TECH PROFESSIONAL">Tech Professional</option>
+                  <option value="GUEST / FACULTY">Guest / Faculty</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="inp-group">
+              <label for="attTrack">Career Track *</label>
+              <select id="attTrack">
+                <option value="Web & Software Engineering">Web &amp; Software (Alex &amp; Joel)</option>
+                <option value="IT Consulting & Strategy">IT Consulting (Dr. Kasumu Olushola)</option>
+                <option value="Creative & Graphic Design">Creative &amp; Design (Omena &amp; Solomon)</option>
+                <option value="Digital Marketing & Ads">Digital Marketing (Odeh &amp; Joel)</option>
+                <option value="Content Creation & Media">Content Creation (Stephen Pascal)</option>
+              </select>
+            </div>
+
+            <div class="inp-group">
+              <label for="attQuestion">Question for Speakers (Optional)</label>
+              <input type="text" id="attQuestion" placeholder="Optional question for live Q&A..." />
+            </div>
+
+            <button type="submit" class="btn-volt btn-lg btn-full">
+              <span>Generate Verified Ticket</span>
+              <span>→</span>
+            </button>
+            <p class="form-msg" id="passFeedback" aria-live="polite"></p>
+          </form>
+
+          <!-- REALISTIC PERFORATED EVENT TICKET WITH QR CODE & BARCODE -->
+          <div class="ticket-showcase reveal-scale">
+            <div class="real-ticket" id="realTicket">
+              <div class="holo-sheen" aria-hidden="true"></div>
+
+              <!-- Top Security Foil Band -->
+              <div class="rt-foil-band">
+                <div class="rt-brand">
+                  <span class="rt-cs">CS</span>
+                  <div>
+                    <strong>TECHNOVATION '26</strong>
+                    <small>DEPT. OF COMPUTER SCIENCE • HCU</small>
+                  </div>
+                </div>
+                <span class="rt-status" id="badgeStatus">PREVIEW PASS</span>
+              </div>
+
+              <!-- Main Ticket Body -->
+              <div class="rt-main">
+                <div class="rt-attendee-row">
+                  <div class="rt-avatar" id="badgeInitials">TN</div>
+                  <div class="rt-attendee-info">
+                    <span class="rt-role" id="badgeRole">CS STUDENT // HCU</span>
+                    <h3 class="rt-name" id="badgeName">YOUR NAME HERE</h3>
+                  </div>
+                </div>
+
+                <div class="rt-grid-specs">
+                  <div class="rt-spec">
+                    <small>DATE</small>
+                    <strong>29 OCT 2026</strong>
+                  </div>
+                  <div class="rt-spec">
+                    <small>DOORS OPEN</small>
+                    <strong>10:00 AM PROMPT</strong>
+                  </div>
+                  <div class="rt-spec">
+                    <small>VENUE</small>
+                    <strong>Ciné-Concorde, Cotonou</strong>
+                  </div>
+                  <div class="rt-spec">
+                    <small>ADMISSION</small>
+                    <strong class="volt-txt">GENERAL / VIP</strong>
+                  </div>
+                </div>
+
+                <div class="rt-track-box">
+                  <small>SELECTED CAREER TRACK</small>
+                  <strong id="badgeTrack">Web &amp; Software Engineering</strong>
+                </div>
+              </div>
+
+              <!-- Realistic Perforated Tear-Off Line with Side Notches -->
+              <div class="rt-perforation" aria-hidden="true">
+                <span class="rt-notch rt-notch-l"></span>
+                <span class="rt-dash"></span>
+                <span class="rt-notch rt-notch-r"></span>
+              </div>
+
+              <!-- Tear-Off Check-In Stub: Live QR Code + Barcode + Ticket ID -->
+              <div class="rt-stub">
+                <div class="rt-qr-wrap">
+                  <div class="rt-qr-box" id="qrContainer" aria-label="Check-In QR Code"></div>
+                  <div class="rt-qr-meta">
+                    <small>CHECK-IN PASS ID</small>
+                    <strong class="volt-txt" id="badgePassId">TCNV-26-8401</strong>
+                    <span class="rt-scan-note">Scan QR or Barcode at Venue Entrance</span>
+                  </div>
+                </div>
+
+                <div class="rt-barcode-wrap">
+                  <svg id="barcodeSvg" class="rt-barcode-svg" viewBox="0 0 260 40" preserveAspectRatio="none" aria-label="Check-In Barcode"></svg>
+                  <span class="rt-barcode-num" id="barcodeText">*TCNV-26-8401*</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Download PNG & Print Buttons -->
+            <div class="ticket-actions">
+              <button type="button" class="btn-volt btn-sm" id="downloadTicketPngBtn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span>Download Ticket (PNG)</span>
+              </button>
+              <button type="button" class="btn-glass btn-sm" id="printBadgeBtn">
+                <span>🖨 Print / Save PDF</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Minimal Footer -->
+  <footer class="footer">
+    <div class="shell footer-inner">
+      <div>
+        <strong>TECHNOVATION '26 — Department of Computer Science</strong>
+        <p>Hill City University • Ciné-Concorde, Von Sokodo, Akpakpa, Cotonou, Benin Republic</p>
+      </div>
+      <p class="motto-txt">LEARN. CONNECT. INNOVATE. BUILD THE FUTURE.</p>
+    </div>
+  </footer>
+
+  <!-- Sticky Mobile Bottom Action Bar -->
+  <div class="mobile-dock" aria-label="Quick Mobile Actions">
+    <div class="dock-info">
+      <strong>29 OCT • 10:00 AM</strong>
+      <span>Ciné-Concorde, Cotonou</span>
+    </div>
+    <div class="dock-btns">
+      <button type="button" class="dock-flyer-btn" id="mobileFlyerBtn" aria-label="View Flyer">🖼</button>
+      <a href="#pass" class="btn-volt btn-sm">Get Ticket →</a>
+    </div>
+  </div>
+
+  <!-- Flyer Lightbox Modal -->
+  <div class="modal-layer" id="posterModal" hidden>
+    <div class="poster-dialog" role="dialog" aria-modal="true">
+      <div class="poster-bar">
+        <span>OFFICIAL FLYER // TECHNOVATION '26</span>
+        <button type="button" class="close-btn" id="closePosterBtn">✕</button>
+      </div>
+      <div class="poster-body">
+        <img src="assets/flyer.jpg" alt="Technovation 2026 Flyer" />
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
